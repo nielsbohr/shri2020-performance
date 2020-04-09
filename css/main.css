@@ -303,7 +303,7 @@ footer {
     font-weight: 700;
     height: 107px;
     line-height: 104px;
-    font-family: OpenSansReg;
+    font-family: OpenSansReg, sans-serif;
 }
 
 .card_size_s {
@@ -673,7 +673,7 @@ html {
     font-weight: 700;
     padding-left: 18px;
     line-height: 27px;
-    font-family: OpenSansLight;
+    font-family: OpenSansLight, sans-serif;
 }
 
 .card-specs {
