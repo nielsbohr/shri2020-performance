@@ -12,13 +12,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @font-face {
-    font-family: OpenSansReg;
+    font-family: OpenSansReg, Arial, Helvetica, sans-serif;
     src: url("../assets/OpenSans-Regular.ttf");
     font-weight: bold;
 }
 
 @font-face {
-    font-family: OpenSansLight;
+    font-family: OpenSansLight, Arial, Helvetica, sans-serif;
     src: url("../assets/OpenSans-Light.ttf");
 }
 
