@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 $('.card').each(function(e) {
     if ($(this).hasClass('card_size_s')) {
@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     '<p class="card-source">Чайник</p>' +
                     '<p class="card-time card-time_block">16:20, Сегодня</p>' +
                 '</div>'
+
 });
 
 document.addEventListener("DOMContentLoaded", function () {
