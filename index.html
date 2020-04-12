@@ -174,12 +174,10 @@
                     <div class="song-volume">80%</div>
                 </div>
 
-
-
             </div></div>
 
 
-            <div class="card card_size_m">
+            <div id="fridgeContainer" class="card card_size_m">
                 <div class="card-heading">
                     <div class="card-icon-wrap">
                         <img class="card-icon" src="img/fridge.svg">
@@ -248,17 +246,13 @@
     </menu>
 </footer>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const buttonsContainer = document.querySelector(".buttons-wrap");
-        const confirmPurchaseButton = document.querySelector(".buttons-wrap .button_yellow");
-        const fridgeInfoContainer = document.querySelector(".card_size_m:nth-child(8) .card-description");
-        const purchaseListContainer = document.querySelector(".purchase-list-wrap");
-        confirmPurchaseButton.onclick = () => {
-            fridgeInfoContainer.replaceWith(purchaseListContainer)
-            buttonsContainer.style.display = "none";
-            purchaseListContainer.style.display = "block";
-        }    
-    }, false);
+    const buttonsContainer = document.querySelector(".buttons-wrap");
+    const confirmPurchaseButton = buttonsContainer.querySelector(".button_yellow");
+    const purchaseListContainer = document.querySelector(".purchase-list-wrap");
+    confirmPurchaseButton.onclick = () => {
+        document.getElementById('fridgeContainer').replaceWith(purchaseListContainer)
+        buttonsContainer.style.display = "none";
+        purchaseListContainer.style.display = "block";}
 </script>
 </body>
 </html>
